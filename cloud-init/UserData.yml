@@ -1,0 +1,9 @@
+#cloud-init
+
+users:
+  - name: rafaelprata
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDn1pGx8LTE/PD82yNls+iyEy1/rGbKp2a0T9bcWyzYMhmf1p9tJmNAbjZwpfgyGt5SXuv5/qq6um4gasY63mVoblBgnGEmgDuK5fgdwitQ9Xj6IngGICGsSXWD2ClL5gMGy7AnDVVlk6xZR+FlKHlNq6SzXAqWGrRgIyO9YjfDD617wBwO51HR5nGgWuhsCgiFF5uMxsxl2y62Hdi8N75yRWk3UyrGiwAIhOvfOsUB1DoYQhMWTgDynSNJUq1Xw1GuUX04daeYKb3W3uDJrw4vlnkPO4MC1sk93B1SEe/Mq+ogP5VOLEoUU8qLg815OJSZA5ZwGf9lEtFnu0Ronpd0tT61+rTqPrJkl9sBIPequFLziCDIliALro9I/xVCnFuHLQjRKCjOoqCdZ8/OgaJ2l8dBEoPxO+Kjb5XtFXCxiUp+4uvr43ctbBSIlPjIhJGnM1mOBMwFC411mBGKRWgzVqmv+8wrLDL9J404ObqbfplNypPFDcD2YDgMoJ2G5vs= rafaelprata@pop-os
+    groups: sudo, users, admin
+package_update: true
+package_upgrade: true
