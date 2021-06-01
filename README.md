@@ -10,12 +10,11 @@ Criar uma VPN utilizando o software OpenVPN entre duas máquinas virtuais locais
 - [x]  Criar um cloud-init.cfg para acessar cada uma das VMs.
 - [x]  Definir uma das VMs como o servidor da VPN.
 - [x]  Instalar o OpenVPN nas VMs.
-- [ ]  Configurar a VPN seguindo os passos do [site](https://openvpn.net/community/).
+- [x]  Configurar a VPN seguindo os passos do [site](https://openvpn.net/community/).
 - [ ]  Criar um roteiro para possível automação.
 - [x]  Criar um repositório para controle de versão.
 - [ ]  Desenvolver um provisionamento para cada uma das instalações.
 - [ ]  Alterar o cloud-init.cfg de acordo com o provisionamento.
-- [ ]  Criar um CI para realizar os testes.
 
 # Documentação
 
@@ -29,4 +28,4 @@ Criar uma VPN utilizando o software OpenVPN entre duas máquinas virtuais locais
 
 - Terça-feira - 01/06
 
-    Ontem foi pensado criar uma terceira VM com o objetivo de cumprir o tutorial do site da [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04-pt), porém tendo em vista as dificuldades de comunicação entre as VM criadas pelo Vagrant, indicado no [artigo](https://www.linkedin.com/pulse/se-preparando-para-o-kubernetes-122-felipe-miranda/) do Felipe, tomei a decisão de fazer meu servidor CA e VPN a mesma máquina. Além disso foi necessário dar privilégios ao usuário criado pelo cloud-init.
+    Ontem foi pensado criar uma terceira VM com o objetivo de cumprir o tutorial do site da [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04-pt), porém tendo em vista as dificuldades de comunicação entre as VM criadas pelo Vagrant, indicado no [artigo](https://www.linkedin.com/pulse/se-preparando-para-o-kubernetes-122-felipe-miranda/) do Felipe, tomei a decisão de fazer meu servidor CA e VPN a mesma máquina. Além disso foi necessário dar privilégios ao usuário criado pelo cloud-init. Após conseguir realizar a conexão via VPN usando o tutorial, é necessário criar um roteiro para a automatização do servidor, bem como um script para automatização do client.
