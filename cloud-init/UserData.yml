@@ -2,6 +2,8 @@
 
 users:
   - name: rafaelprata
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
     ssh_authorized_keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDn1pGx8LTE/PD82yNls+iyEy1/rGbKp2a0T9bcWyzYMhmf1p9tJmNAbjZwpfgyGt5SXuv5/qq6um4gasY63mVoblBgnGEmgDuK5fgdwitQ9Xj6IngGICGsSXWD2ClL5gMGy7AnDVVlk6xZR+FlKHlNq6SzXAqWGrRgIyO9YjfDD617wBwO51HR5nGgWuhsCgiFF5uMxsxl2y62Hdi8N75yRWk3UyrGiwAIhOvfOsUB1DoYQhMWTgDynSNJUq1Xw1GuUX04daeYKb3W3uDJrw4vlnkPO4MC1sk93B1SEe/Mq+ogP5VOLEoUU8qLg815OJSZA5ZwGf9lEtFnu0Ronpd0tT61+rTqPrJkl9sBIPequFLziCDIliALro9I/xVCnFuHLQjRKCjOoqCdZ8/OgaJ2l8dBEoPxO+Kjb5XtFXCxiUp+4uvr43ctbBSIlPjIhJGnM1mOBMwFC411mBGKRWgzVqmv+8wrLDL9J404ObqbfplNypPFDcD2YDgMoJ2G5vs= rafaelprata@pop-os
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDJIgBRFCIMtVv6MJBO/JnfsdYrGng/bjEQe88Cm41UnE2Z0sNCUSlf8E7dogdDqmM4RsUes/fP6OEAfLIYyR867rMTNzNUEQIyb3t7cPnTdxxRq2+EBqgKm3Eb9fSs5SEMMhR78NbVglvv3t2SNExy8vU43GTkGuhqGVSd8cnEWMj1k+BRsvwmefs1PD6J5M4uWzmr6Ub9OE9I8nzohT+B0eurJcQLxAeNN6WdiN8MK2WOvbcDzx7DQWJ4vOmRSJjra02berwzZE3kY9lKdPXr1eL9QjhVubuTIq/mI1Fntq1HdGjqtVRHKAIBvUtEXeuRDXzQF+tskh1AoEYRA1bJy7MzDBV/M0lRbt7jAHKwHByju8umDYZBgGv/6o76aUiwLi+EmpezbtTk8pvufmMZTG3DeJcU/0V/hTuNjhRrrdeLVqoUCkDNh40CiE9WvZUWjn55FLuTFr3GtMsMN+h3amZn0NMTRB8vzHEzV3BnbC2w/BPeRnK6ZBM3pTEfZO8= lauraprata@pop-os
@@ -10,3 +12,4 @@ package_update: true
 package_upgrade: true
 packages:
   - openvpn
+  - easy-rsa

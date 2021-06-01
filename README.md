@@ -26,3 +26,7 @@ Criar uma VPN utilizando o software OpenVPN entre duas máquinas virtuais locais
 - Segunda-feira - 31/05
 
     Finalizado a criação inicial do Vagrantfile básico, duas máquinas Ubuntu 20.04 iniciadas baseada em uma cloud image ([https://cloud-images.ubuntu.com/](https://cloud-images.ubuntu.com/)). Além disso já foi criado um repositório no [github](https://github.com/rafaprata/vagrant-vpn) para acompanhar as alterações no projeto. Consegui desenvolver uma configuração de cloud-init básica para acesso via ssh, adicionando meu usuário e minha chave de acesso ssh. Finalizei a configuração de rede das máquinas, tendo em vista que uma das máquinas precisa ter acesso a internet, no caso utilizei conexão bridge pela interface WiFi, enquanto a outra terá acesso apenas pela VPN. Além disso já configurei o UserData.yml para instalar o OpenVPN nas VMs.
+
+- Terça-feira - 01/06
+
+    Ontem foi pensado criar uma terceira VM com o objetivo de cumprir o tutorial do site da [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-ubuntu-20-04-pt), porém tendo em vista as dificuldades de comunicação entre as VM criadas pelo Vagrant, indicado no [artigo](https://www.linkedin.com/pulse/se-preparando-para-o-kubernetes-122-felipe-miranda/) do Felipe, tomei a decisão de fazer meu servidor CA e VPN a mesma máquina. Além disso foi necessário dar privilégios ao usuário criado pelo cloud-init.
